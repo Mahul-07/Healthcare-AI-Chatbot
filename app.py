@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
+st.secrets("GOOGLE_API_KEY")
+
 specialties = {
     "Cardiologist": [
         {"name": "Dr. Alice Heart", "time_slots": ["10:00 AM", "2:00 PM"]},
